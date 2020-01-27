@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\usepackage{cite}
+
+\begin{filecontents}{\jobname.bib}
+@book{key,
+  author = {Author, A.},
+  year = {2001},
+  title = {Title},
+  publisher = {Publisher},
+}
+\end{filecontents}
+
+\begin{document}
+
+\cite{key}
+
+\bibliographystyle{plain}
+\bibliography{\jobname}
+
+\end{document}

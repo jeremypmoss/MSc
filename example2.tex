@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage{cite}
+
+\begin{filecontents}{\jobname.bib}
+@book{key,
+  author = {Author, A.},
+  year = {2001},
+  title = {Title},
+  publisher = {Publisher},
+}
+
+@ARTICLE{bland,
+	author = {{Bland-Hawthorn}, J. and {Gerhard}, O.},
+	title = "{The Galaxy in Context: Structural, Kinematic, and Integrated Properties}",
+	journal = {ARA\&A},
+	archivePrefix = "arXiv",
+	eprint = {1602.07702},
+	year = 2016,
+	month = sep,
+	volume = 54,
+	pages = {529-596},
+	doi = {10.1146/annurev-astro-081915-023441},
+	adsurl = {http://adsabs.harvard.edu/abs/2016ARA\%26A..54..529B},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{glowacki,
+	author = {{Glowacki}, M. and {Allison}, J.~R. and {Sadler}, E.~M. and 
+		{Moss}, V.~A. and {Jarrett}, T.~H.},
+	title = "{WISE data as a photometric redshift indicator for radio AGN}",
+	journal = {ArXiv e-prints},
+	archivePrefix = "arXiv",
+	eprint = {1709.08634},
+	primaryClass = "astro-ph.IM",
+	keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - Astrophysics of Galaxies},
+	year = 2017,
+	month = sep,
+	adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170908634G},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2011PASA...28..215N,
+	author = {{Norris}, R.~P. and {Hopkins}, A.~M. and {Afonso}, J. and {Brown}, S. and 
+		{Condon}, J.~J. and {Dunne}, L. and {Feain}, I. and {Hollow}, R. and 
+		{Jarvis}, M. and {Johnston-Hollitt}, M. and {Lenc}, E. and {Middelberg}, E. and 
+		{Padovani}, P. and {Prandoni}, I. and {Rudnick}, L. and {Seymour}, N. and 
+		{Umana}, G. and {Andernach}, H. and {Alexander}, D.~M. and {Appleton}, P.~N. and 
+		{Bacon}, D. and {Banfield}, J. and {Becker}, W. and {Brown}, M.~J.~I. and 
+		{Ciliegi}, P. and {Jackson}, C. and {Eales}, S. and {Edge}, A.~C. and 
+		{Gaensler}, B.~M. and {Giovannini}, G. and {Hales}, C.~A. and 
+		{Hancock}, P. and {Huynh}, M.~T. and {Ibar}, E. and {Ivison}, R.~J. and 
+		{Kennicutt}, R. and {Kimball}, A.~E. and {Koekemoer}, A.~M. and 
+		{Koribalski}, B.~S. and {L{\'o}pez-S{\'a}nchez}, {\'A}.~R. and 
+		{Mao}, M.~Y. and {Murphy}, T. and {Messias}, H. and {Pimbblet}, K.~A. and 
+		{Raccanelli}, A. and {Randall}, K.~E. and {Reiprich}, T.~H. and 
+		{Roseboom}, I.~G. and {R{\"o}ttgering}, H. and {Saikia}, D.~J. and 
+		{Sharp}, R.~G. and {Slee}, O.~B. and {Smail}, I. and {Thompson}, M.~A. and 
+		{Urquhart}, J.~S. and {Wall}, J.~V. and {Zhao}, G.-B.},
+	title = "{EMU: Evolutionary Map of the Universe}",
+	journal = {PASA},
+	archivePrefix = "arXiv",
+	eprint = {1106.3219},
+	keywords = {telescopes, surveys, stars: activity,  galaxies: evolution, galaxies: formation,  cosmology: observations, radio continuum: general},
+	year = 2011,
+	month = aug,
+	volume = 28,
+	pages = {215-248},
+	doi = {10.1071/AS11021},
+	adsurl = {http://adsabs.harvard.edu/abs/2011PASA...28..215N},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2018MNRAS.476.3580C,
+	author = {{Curran}, S.~J. and {Duchesne}, S.~W.},
+	title = "{The mid-infrared properties and gas content of active galaxies over large lookback times}",
+	journal = {MNRAS},
+	archivePrefix = "arXiv",
+	eprint = {1802.05760},
+	keywords = {galaxies: active, galaxies: ISM, quasars: absorption lines, infrared: galaxies, radio lines: galaxies, ultraviolet: galaxies},
+	year = 2018,
+	month = may,
+	volume = 476,
+	pages = {3580-3590},
+	doi = {10.1093/mnras/sty443},
+	adsurl = {http://adsabs.harvard.edu/abs/2018MNRAS.476.3580C},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+\end{filecontents}
+
+\begin{document}
+
+\cite{key}
+\cite{bland}
+\cite{glowacki}
+\cite{2011PASA...28..215N}
+\cite{2018MNRAS.476.3580C}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{\jobname}
+
+\end{document}
